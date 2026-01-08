@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Md. Rashedul Alam | Business Strategist & Content Creator</title>
+    <meta name="description" content="Md. Rashedul Alam is a Business Strategist and Content Creator. Management Information Secretary at Skill Up Club, DIU. Specialist in Digital Engagement and Leadership.">
+    <meta name="keywords" content="Md. Rashedul Alam, Rashed Anando, Business Strategist, Content Creator, DIU, Skill Up Club, Management Portfolio">
+    <meta name="author" content="Md. Rashedul Alam">
+    
+    <meta property="og:title" content="Md. Rashedul Alam | Executive Portfolio">
+    <meta property="og:description" content="Specializing in bridging traditional business management with the digital era.">
+    <meta property="og:image" content="https://i.postimg.cc/wx4RCGbZ/IMG-20260108-WA0000.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --gold: #e2b842;
+            --gold-glow: rgba(226, 184, 66, 0.3);
+            --bg: #050810;
+            --card: rgba(15, 23, 42, 0.6);
+            --text: #f8fafc;
+            --sub-text: #94a3b8;
+            --accent-gradient: linear-gradient(135deg, #e2b842 0%, #9e7e2a 100%);
+        } 
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        } 
+
+        /* --- NAVIGATION --- */
+        nav {
+            position: fixed;
+            top: 0; width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(5, 8, 16, 0.85);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .logo { font-family: 'Playfair Display'; font-weight: 900; color: var(--gold); font-size: 1.5rem; letter-spacing: 2px; }
+        .nav-links a { color: var(--text); text-decoration: none; margin-left: 30px; font-size: 0.9rem; font-weight: 600; transition: 0.3s; }
+        .nav-links a:hover { color: var(--gold); text-shadow: 0 0 10px var(--gold-glow); } 
+
+        /* --- HERO SECTION --- */
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 20px;
+            background: radial-gradient(circle at 50% 50%, #111827 0%, #050810 100%);
+            position: relative;
+        } 
+
+        .hero-container {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            gap: 80px;
+            flex-wrap: wrap;
+            justify-content: center;
+        } 
+
+        .main-img-container {
+            position: relative;
+            width: 380px;
+            height: 480px;
+            border-radius: 30px;
+            overflow: hidden;
+            border: 1px solid rgba(226, 184, 66, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        } 
+
+        .profile-main img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+        }
+
+        .main-img-container:hover img { transform: scale(1.08); }
+
+        .hero-content { max-width: 600px; }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+        .hero-sub {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.1rem; font-weight: 800; letter-spacing: 3px;
+            text-transform: uppercase; margin-bottom: 20px;
+        } 
+
+        /* --- THUMBS --- */
+        .thumb-nav { display: flex; gap: 12px; margin-top: 20px; justify-content: center; }
+        .thumb-nav img {
+            width: 55px; height: 55px; border-radius: 12px;
+            cursor: pointer; object-fit: cover; border: 2px solid transparent;
+            transition: 0.3s; opacity: 0.4;
+        }
+        .thumb-nav img.active { opacity: 1; border-color: var(--gold); transform: translateY(-5px); } 
+
+        /* --- SECTIONS --- */
+        section { padding: 100px 20px; max-width: 1200px; margin: auto; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 40px; }
+        .section-title span { color: var(--gold); } 
+
+        .card {
+            background: var(--card);
+            backdrop-filter: blur(12px);
+            padding: 35px; border-radius: 24px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+        .card:hover { 
+            border-color: var(--gold); 
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        } 
+
+        .skills-container { display: flex; flex-wrap: wrap; gap: 15px; }
+        .tag {
+            padding: 12px 24px; border-radius: 12px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            font-weight: 600; transition: 0.4s; font-size: 0.85rem;
+            cursor: default;
+        }
+        .tag:hover { 
+            background: var(--accent-gradient); 
+            color: #000; 
+            transform: scale(1.1) rotate(2deg); 
+        } 
+
+        /* --- LISTS --- */
+        ul { list-style: none; }
+        li { margin-bottom: 12px; position: relative; padding-left: 25px; color: var(--sub-text); }
+        li::before { content: "\f061"; font-family: "Font Awesome 5 Free"; font-weight: 900; position: absolute; left: 0; color: var(--gold); font-size: 0.8rem; } 
+
+        /* --- BUTTONS --- */
+        .btn-group { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 35px; }
+        .btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 16px 38px; border-radius: 50px; font-weight: 800;
+            text-decoration: none; transition: 0.4s; font-size: 0.95rem;
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+        .btn-primary { background: var(--accent-gradient); color: #000; }
+        .btn-secondary { border: 1.5px solid var(--gold); color: var(--gold); }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 15px 30px var(--gold-glow); } 
+
+        .social-big { display: flex; gap: 25px; margin-top: 30px; }
+        .social-big a { color: var(--text); font-size: 1.8rem; transition: 0.4s; }
+        .social-big a:hover { color: var(--gold); transform: translateY(-5px) scale(1.2); } 
+
+        /* Scroll Progress Bar */
+        #scroll-progress {
+            position: fixed; top: 0; left: 0; height: 4px;
+            background: var(--accent-gradient); z-index: 1001; width: 0%;
+        }
+
+        @media(max-width: 900px) {
+            .hero-container { text-align: center; }
+            .nav-links { display: none; }
+            .btn-group, .social-big { justify-content: center; }
+            .main-img-container { width: 300px; height: 380px; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+
+<nav>
+    <div class="logo">RA.</div>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav> 
+
+<header>
+    <div class="hero-container">
+        <div class="profile-wrapper" data-aos="fade-right">
+            <div class="main-img-container">
+                <div class="profile-main" style="height: 100%;">
+                    <img id="mainImg" src="https://i.postimg.cc/wx4RCGbZ/IMG-20260108-WA0000.jpg" alt="Md. Rashedul Alam">
+                </div>
+            </div>
+            <div class="thumb-nav" id="thumbBar">
+                <img src="https://i.postimg.cc/wx4RCGbZ/IMG-20260108-WA0000.jpg" class="active" onclick="changeImg(0)">
+                <img src="https://i.postimg.cc/YC9Dx9sC/FB-IMG-1767859421742.jpg" onclick="changeImg(1)">
+                <img src="https://i.postimg.cc/k4rj9yXG/FB-IMG-1767859413235.jpg" onclick="changeImg(2)">
+                <img src="https://i.postimg.cc/Gh3Xctrc/FB-IMG-1767859930801.jpg" onclick="changeImg(3)">
+                <img src="https://i.postimg.cc/qRXGrV5c/FB-IMG-1767875156300.jpg" onclick="changeImg(4)">
+            </div>
+        </div> 
+
+        <div class="hero-content" data-aos="fade-left">
+            <p class="hero-sub">Business Strategist | Content Creator</p>
+            <h1>Md. Rashedul <span style="color:var(--gold)">Alam</span></h1>
+            <p style="font-size: 1.2rem; color: var(--sub-text); margin-bottom: 25px;">
+                Management Information Secretary at Skill Up Club, DIU. Focused on bridging traditional business management with the digital era.
+            </p>
+            
+            <div class="social-big">
+                <a href="https://www.linkedin.com/in/rashedanando" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/share/1DWx2PXYBm/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/rashed.anando" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@rashedanando" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div> 
+
+            <div class="btn-group">
+                <a href="https://wa.me/8801837569796" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Me
+                </a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+</header> 
+
+<section id="about" data-aos="fade-up">
+    <h2 class="section-title">Career <span>Vision</span></h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        <div class="card">
+            <h3 style="color: var(--gold); margin-bottom: 15px;">Objective</h3>
+            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--sub-text);">
+                To build a career through continuous effort and dedication, while enhancing my knowledge and skills. I seek to contribute effectively with my abilities in a professional environment.
+            </p>
+        </div>
+        <div class="card">
+            <h3 style="color: var(--gold); margin-bottom: 15px;">Personal Details</h3>
+            <ul>
+                <li><strong>Father:</strong> Khorshed Alam</li>
+                <li><strong>Mother:</strong> Josna Begum</li>
+                <li><strong>Birth Date:</strong> Nov 26, 2003</li>
+                <li><strong>Blood Group:</strong> B+</li>
+                <li><strong>Address:</strong> Mirpur-2, Dhaka-1216</li>
+            </ul>
+        </div>
+    </div>
+</section> 
+
+<section id="education" data-aos="fade-up">
+    <h2 class="section-title">Academic <span>Background</span></h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        <div class="card">
+            <span style="color: var(--gold); font-weight: 800; font-size: 0.8rem;">UNIVERSITY</span>
+            <h3 style="margin: 10px 0;">BBA in Management</h3>
+            <p>Daffodil International University</p>
+            <p style="color: var(--gold); font-weight: 700; margin-top: 10px;">CGPA: 3.33 / 4.00</p>
+        </div>
+        <div class="card">
+            <span style="color: var(--gold); font-weight: 800; font-size: 0.8rem;">COLLEGE (2022)</span>
+            <h3 style="margin: 10px 0;">HSC - Humanities</h3>
+            <p>BCIC College, Mirpur</p>
+            <p style="color: var(--gold); font-weight: 700; margin-top: 10px;">GPA: 5.00 / 5.00</p>
+        </div>
+        <div class="card">
+            <span style="color: var(--gold); font-weight: 800; font-size: 0.8rem;">SCHOOL (2020)</span>
+            <h3 style="margin: 10px 0;">SSC - Science</h3>
+            <p>Somapra High School</p>
+            <p style="color: var(--gold); font-weight: 700; margin-top: 10px;">GPA: 4.06 / 5.00</p>
+        </div>
+    </div>
+</section> 
+
+<section id="experience" data-aos="fade-up">
+    <h2 class="section-title">Experience & <span>Leadership</span></h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+        <div class="card">
+            <h3 style="color: var(--gold); margin-bottom: 20px;"><i class="fas fa-briefcase"></i> Key Responsibilities</h3>
+            <ul>
+                <li>Management Information Secretary, Skill Up Club, DIU</li>
+                <li>Content Creation & Digital Engagement (FB/YT)</li>
+                <li>Organizer, Youth Leadership Bootcamp (AOLY-Camp 2025)</li>
+                <li>Contributor, Department Development Suggestions, DIU</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3 style="color: var(--gold); margin-bottom: 20px;"><i class="fas fa-hands-helping"></i> Volunteering</h3>
+            <ul>
+                <li>Volunteer, Oitijjer Haat, DIU (2025)</li>
+                <li>Career Talk Seminar, BD Calling IT Ltd (2025)</li>
+                <li>Orientation Program Volunteer, Spring 2025</li>
+                <li>Organizer, BCIC Orientation (2023) & Carnival (2022)</li>
+            </ul>
+        </div>
+    </div>
+</section> 
+
+<section id="skills" data-aos="zoom-in">
+    <h2 class="section-title">Core <span>Expertise</span></h2>
+    <div class="skills-container">
+        <span class="tag">MS Excel, Word, PowerPoint</span>
+        <span class="tag">Google Docs & Sheets</span>
+        <span class="tag">AI Tools for Productivity</span>
+        <span class="tag">Professional Video Editing</span>
+        <span class="tag">Email Communication</span>
+        <span class="tag">Strategic Leadership</span>
+        <span class="tag">Analytical Thinking</span>
+        <span class="tag">Public Speaking</span>
+    </div>
+</section> 
+
+<section id="contact" style="text-align: center;" data-aos="fade-up">
+    <h2 class="section-title">Let's <span>Collaborate</span></h2>
+    <div class="card" style="max-width: 600px; margin: auto;">
+        <p style="margin-bottom: 25px; color: var(--sub-text);">Open for professional opportunities and creative collaborations.</p>
+        <p style="font-size: 1.1rem;"><i class="fas fa-envelope" style="color:var(--gold)"></i> imdrashedulalam@gmail.com</p>
+        <p style="margin-top: 15px; font-size: 1.1rem;"><i class="fas fa-phone" style="color:var(--gold)"></i> 01837569796</p>
+        <div class="social-big" style="justify-content: center; margin-top: 30px;">
+            <a href="https://www.linkedin.com/in/rashedanando" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://youtube.com/@rashedanando" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/share/1DWx2PXYBm/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+</section> 
+
+<footer style="padding: 50px; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
+    <p style="color: var(--sub-text); font-size: 0.9rem;">&copy; 2026 Md. Rashedul Alam | Designed for Impact</p>
+</footer> 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialize AOS Animations
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+
+    // Scroll Progress Logic
+    window.onscroll = function() {
+        let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrolled = (winScroll / height) * 100;
+        document.getElementById("scroll-progress").style.width = scrolled + "%";
+    };
+
+    // Image Slider Logic
+    const images = [
+        "https://i.postimg.cc/wx4RCGbZ/IMG-20260108-WA0000.jpg",
+        "https://i.postimg.cc/YC9Dx9sC/FB-IMG-1767859421742.jpg",
+        "https://i.postimg.cc/k4rj9yXG/FB-IMG-1767859413235.jpg",
+        "https://i.postimg.cc/Gh3Xctrc/FB-IMG-1767859930801.jpg",
+        "https://i.postimg.cc/qRXGrV5c/FB-IMG-1767875156300.jpg"
+    ]; 
+
+    let currentIndex = 0;
+    const mainImg = document.getElementById('mainImg');
+    const thumbs = document.querySelectorAll('.thumb-nav img'); 
+
+    function changeImg(index) {
+        currentIndex = index;
+        mainImg.style.opacity = '0';
+        mainImg.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            mainImg.src = images[currentIndex];
+            mainImg.style.opacity = '1';
+            mainImg.style.transform = 'scale(1)';
+        }, 300);
+        thumbs.forEach(t => t.classList.remove('active'));
+        thumbs[currentIndex].classList.add('active');
+    } 
+
+    // Auto slide
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        changeImg(currentIndex);
+    }, 6000);
+</script> 
+
+</body>
+</html>
